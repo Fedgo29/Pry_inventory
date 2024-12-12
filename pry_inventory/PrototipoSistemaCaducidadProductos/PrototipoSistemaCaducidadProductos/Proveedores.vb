@@ -1,7 +1,7 @@
 ﻿Imports System.Data.OleDb
 
 Public Class Proveedores
-    Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Edgar\Downloads\Temporaly\Daniel_proyecto\PrototipoSistemaCaducidadProductos\PrototipoSistemaCaducidadProductos.accdb"
+    Dim connectionString As String = VentanaInicio.connectionString
     Dim Id_proveedores As String
 
 
@@ -184,5 +184,9 @@ Public Class Proveedores
                 End If
             End Try
         End If
+    End Sub
+
+    Private Sub PProveedor_Paint(sender As Object, e As PaintEventArgs) Handles PProveedor.Paint
+
     End Sub
 End Class

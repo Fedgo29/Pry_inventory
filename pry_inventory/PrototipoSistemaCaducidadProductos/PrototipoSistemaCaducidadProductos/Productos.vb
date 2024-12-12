@@ -2,8 +2,50 @@
 
 Public Class Productos
     ' Definiendo la cadena de conexion.
-    Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Edgar\Downloads\Temporaly\Daniel_proyecto\PrototipoSistemaCaducidadProductos\PrototipoSistemaCaducidadProductos.accdb"
+    Dim connectionString As String = VentanaInicio.connectionString
     Dim Id_producto As String
+
+    ' Creamos una instancia del temporizador
+    Private WithEvents Timer1 As New Timer()
+    Public Sub New()
+        InitializeComponent()
+        ' Configurar el temporizador
+        Timer1.Interval = 5000 '3600000 ' Establecemos el intervalo en milisegundos (3600000 ms = 1 hora)
+        Timer1.Start() ' Iniciar el temporizador
+    End Sub
+
+    ' Este evento se ejecutará cada vez que el temporizador se active
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim targetDate As DateTime
+        Dim connection As New OleDbConnection(connectionString)
+        Dim query As String = "SELECT ID, NOMBRE, DESCRIPCION, UNIDAD, FECHA_CADUCIDAD FROM PRODUCTO"
+        Dim adapter As New OleDbDataAdapter(query, connection)
+        Dim dt As New DataTable()
+        Dim unidad As Integer
+
+        Try
+            connection.Open()
+            adapter.Fill(dt)
+
+            For Each row As DataRow In dt.Rows
+                targetDate = row("Fecha_caducidad")
+                unidad = row("UNIDAD")
+                ' Verificamos si la fecha actual es mayor o igual a la fecha objetivo
+                If DateTime.Now >= targetDate And unidad > 0 Then
+                    MessageBox.Show("El producto: " & row("NOMBRE") & " tiene fecha de caducidad " & row("FECHA_CADUCIDAD") & " para " & row("UNIDAD") & " unidades.")
+                    Timer1.Stop() ' Detenemos el temporizador después de la verificación
+                Else
+                    ' Si aún no ha llegado la fecha, mostramos la fecha actual
+                    Console.WriteLine("Fecha actual: " & DateTime.Now)
+                End If
+            Next
+        Catch ex As Exception
+            MessageBox.Show("Error al conectar: " & ex.Message)
+        Finally
+            connection.Close()
+        End Try
+    End Sub
+
 
     Private Sub bguardar_Click(sender As Object, e As EventArgs) Handles bguardar.Click
         If bguardar.Text = "Guardar" Then
@@ -84,7 +126,7 @@ Public Class Productos
         Dim connection As New OleDbConnection(connectionString)
         Try
             connection.Open()
-            Dim query As String = "SELECT ID, NOMBRE, DESCRIPCION, UNIDAD FROM PRODUCTO"
+            Dim query As String = "SELECT ID, NOMBRE, DESCRIPCION, UNIDAD, FECHA_CADUCIDAD FROM PRODUCTO"
             Dim adapter As New OleDbDataAdapter(query, connection)
             Dim dt As New DataTable()
             adapter.Fill(dt)
@@ -123,7 +165,7 @@ Public Class Productos
     Private Sub actualizar()
         Dim connection As New OleDbConnection(connectionString)
         Try
-            Dim query As String = "UPDATE PRODUCTO SET Nombre = @newNombre, Descripcion = @newDescripcion, Codigo_barras = @newCodigoBarras, Precio_in = @newPrecioin, Precio_out = @newPrecioOut,Categoria = @newCategoria, Marca = @newMarca, Um = @newUM, Fecha_caducidad = @newFechacaducidad, Material = @newMaterial, id_Proveedor = @newProveedor, Utilidad = @newUtilidad, Stockminimo = @newStockMin, Stockactual = @newStockact, Stockmaximo = @newStockMax WHERE ID = @ID;"
+            Dim query As String = "UPDATE PRODUCTO SET Nombre = @newNombre, Descripcion = @newDescripcion, Codigo_barras = @newCodigoBarras, Precio_in = @newPrecioin, Precio_out = @newPrecioOut,Categoria = @newCategoria, Marca = @newMarca, Um = @newUM, Fecha_caducidad = @newFechacaducidad, Material = @newMaterial, id_Proveedor = @newProveedor, Utilidad = @newUtilidad, Stockminimo = @newStockMin, Stockactual = @newStockact, Stockmaximo = @newStockMax, Unidad = @newUnidad WHERE ID = @ID;"
 
             Dim cmd = New OleDbCommand(query, connection)
 
@@ -142,6 +184,7 @@ Public Class Productos
             cmd.Parameters.Add("@newStockMin", OleDbType.Integer).Value = Convert.ToInt32(tb_stockmin.Text)
             cmd.Parameters.Add("@newStockact", OleDbType.Integer).Value = Convert.ToInt32(tb_stockact.Text)
             cmd.Parameters.Add("@newStockMax", OleDbType.Integer).Value = Convert.ToInt32(tb_stockmax.Text)
+            cmd.Parameters.Add("@newUnidad", OleDbType.Integer).Value = Convert.ToInt32(tb_cantidad.Text)
             cmd.Parameters.Add("@ID", OleDbType.Integer).Value = Convert.ToInt32(Id_producto)
 
             connection.Open()
@@ -167,7 +210,7 @@ Public Class Productos
         Dim connection As New OleDbConnection(connectionString)
 
         Try
-            Dim query As String = "INSERT INTO PRODUCTO (Nombre, Descripcion, Codigo_barras, Precio_in, Precio_out, Categoria, Marca, UM, Fecha_caducidad, Material, Id_Proveedor, Utilidad, Stockminimo, StockActual, StockMaximo) VALUES (@newNombre, @newDescripcion, @newCodigoBarras, @newPrecioin, @newPrecioOut, @newCategoria, @newMarca, @newUM, @newFechacaducidad, @newMaterial, @newProveedor, @newUtilidad, @newStockMin, @newStockact, @newStockMax);"
+            Dim query As String = "INSERT INTO PRODUCTO (Nombre, Descripcion, Codigo_barras, Precio_in, Precio_out, Categoria, Marca, UM, Fecha_caducidad, Material, Id_Proveedor, Utilidad, Stockminimo, StockActual, StockMaximo, Unidad) VALUES (@newNombre, @newDescripcion, @newCodigoBarras, @newPrecioin, @newPrecioOut, @newCategoria, @newMarca, @newUM, @newFechacaducidad, @newMaterial, @newProveedor, @newUtilidad, @newStockMin, @newStockact, @newStockMax, @newUnidad);"
 
             Dim cmd = New OleDbCommand(query, connection)
 
@@ -186,6 +229,7 @@ Public Class Productos
             cmd.Parameters.Add("@newStockMin", OleDbType.Integer).Value = Convert.ToInt32(tb_stockmin.Text)
             cmd.Parameters.Add("@newStockact", OleDbType.Integer).Value = Convert.ToInt32(tb_stockact.Text)
             cmd.Parameters.Add("@newStockMax", OleDbType.Integer).Value = Convert.ToInt32(tb_stockmax.Text)
+            cmd.Parameters.Add("@newUnidad", OleDbType.Integer).Value = Convert.ToInt32(tb_cantidad.Text)
 
             connection.Open()
 
@@ -231,5 +275,13 @@ Public Class Productos
                 End If
             End Try
         End If
+    End Sub
+
+    Private Sub PProducto_Paint(sender As Object, e As PaintEventArgs) Handles PProducto.Paint
+
+    End Sub
+
+    Private Sub dgvVisor_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvVisor.CellContentClick
+
     End Sub
 End Class

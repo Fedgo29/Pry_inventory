@@ -4,6 +4,8 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports System.Windows.Forms
 
 Public Class VentanaInicio
+    Public connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Edgar\Documents\GitHub\Pry_inventory\pry_inventory\PrototipoSistemaCaducidadProductos\PrototipoSistemaCaducidadProductos.accdb"
+
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub

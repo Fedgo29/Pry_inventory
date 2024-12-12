@@ -3,7 +3,7 @@
 Public Class Usuario
 
     ' Definiendo la cadena de conexion.
-    Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Edgar\Downloads\Temporaly\Daniel_proyecto\PrototipoSistemaCaducidadProductos\PrototipoSistemaCaducidadProductos.accdb"
+    Dim connectionString As String = VentanaInicio.connectionString
     Dim Id_usuario As String
 
     Private Sub actualizar()
@@ -202,5 +202,9 @@ Public Class Usuario
                 End If
             End Try
         End If
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
     End Sub
 End Class

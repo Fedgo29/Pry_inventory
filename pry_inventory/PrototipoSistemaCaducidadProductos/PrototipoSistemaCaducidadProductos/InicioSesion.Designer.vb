@@ -24,6 +24,7 @@ Partial Class InicioSesion
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InicioSesion))
         PanelTitulo = New Panel()
+        BotonCerrar = New PictureBox()
         PictureBox1 = New PictureBox()
         BotonMaximizar = New PictureBox()
         PictureBox4 = New PictureBox()
@@ -39,8 +40,8 @@ Partial Class InicioSesion
         BotonMinimizar = New PictureBox()
         PictureBox7 = New PictureBox()
         Label3 = New Label()
-        BotonCerrar = New PictureBox()
         PanelTitulo.SuspendLayout()
+        CType(BotonCerrar, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(BotonMaximizar, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
@@ -49,7 +50,6 @@ Partial Class InicioSesion
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(BotonMinimizar, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
-        CType(BotonCerrar, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PanelTitulo
@@ -64,6 +64,17 @@ Partial Class InicioSesion
         PanelTitulo.Name = "PanelTitulo"
         PanelTitulo.Size = New Size(327, 40)
         PanelTitulo.TabIndex = 8
+        ' 
+        ' BotonCerrar
+        ' 
+        BotonCerrar.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        BotonCerrar.Image = CType(resources.GetObject("BotonCerrar.Image"), Image)
+        BotonCerrar.Location = New Point(287, 6)
+        BotonCerrar.Name = "BotonCerrar"
+        BotonCerrar.Size = New Size(28, 28)
+        BotonCerrar.SizeMode = PictureBoxSizeMode.Zoom
+        BotonCerrar.TabIndex = 18
+        BotonCerrar.TabStop = False
         ' 
         ' PictureBox1
         ' 
@@ -237,17 +248,6 @@ Partial Class InicioSesion
         Label3.Text = "Contraseña:"
         Label3.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' BotonCerrar
-        ' 
-        BotonCerrar.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        BotonCerrar.Image = CType(resources.GetObject("BotonCerrar.Image"), Image)
-        BotonCerrar.Location = New Point(287, 6)
-        BotonCerrar.Name = "BotonCerrar"
-        BotonCerrar.Size = New Size(28, 28)
-        BotonCerrar.SizeMode = PictureBoxSizeMode.Zoom
-        BotonCerrar.TabIndex = 18
-        BotonCerrar.TabStop = False
-        ' 
         ' InicioSesion
         ' 
         AutoScaleDimensions = New SizeF(120F, 120F)
@@ -269,6 +269,7 @@ Partial Class InicioSesion
         StartPosition = FormStartPosition.CenterScreen
         Text = "InicioSesion"
         PanelTitulo.ResumeLayout(False)
+        CType(BotonCerrar, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(BotonMaximizar, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
@@ -277,7 +278,6 @@ Partial Class InicioSesion
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(BotonMinimizar, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
-        CType(BotonCerrar, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub

@@ -1,7 +1,7 @@
 ﻿Imports System.Data.OleDb
 
 Public Class Categoria
-    Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Edgar\Downloads\Temporaly\Daniel_proyecto\PrototipoSistemaCaducidadProductos\PrototipoSistemaCaducidadProductos.accdb"
+    Dim connectionString As String = VentanaInicio.connectionString
     Dim Id_Categoria As String
 
 
@@ -146,7 +146,7 @@ Public Class Categoria
                 While reader.Read
                     tb_nombre.Text = reader("NOMBRE").ToString
                     tbDescripcion.Text = reader("DESCRIPCION").ToString
-                    tbFecha_Creacion.Text = reader("FECHA_CREACION").ToString
+                    dtpFecha_Creacion.Text = reader("FECHA_CREACION").ToString
                 End While
                 bguardar.Text = "Actualizar"
                 reader.Close()
@@ -185,5 +185,9 @@ Public Class Categoria
                 connection.Close()
             End If
         End Try
+    End Sub
+
+    Private Sub PProveedor_Paint(sender As Object, e As PaintEventArgs) Handles PProveedor.Paint
+
     End Sub
 End Class

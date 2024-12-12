@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Edgar\\Downloads\\Temporaly\\Daniel_proyecto\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj": {}
+    "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Edgar\\Downloads\\Temporaly\\Daniel_proyecto\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj": {
+    "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Edgar\\Downloads\\Temporaly\\Daniel_proyecto\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj",
+        "projectUniqueName": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj",
         "projectName": "PrototipoSistemaCaducidadProductos",
-        "projectPath": "C:\\Users\\Edgar\\Downloads\\Temporaly\\Daniel_proyecto\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj",
+        "projectPath": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj",
         "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Edgar\\Downloads\\Temporaly\\Daniel_proyecto\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\obj\\",
+        "outputPath": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",

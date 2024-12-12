@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PrototipoSistemaCaducidadProductos
-build_property.ProjectDir = C:\Users\Edgar\Downloads\Temporaly\Daniel_proyecto\PrototipoSistemaCaducidadProductos\PrototipoSistemaCaducidadProductos\
+build_property.ProjectDir = C:\Users\Edgar\Documents\GitHub\Pry_inventory\pry_inventory\PrototipoSistemaCaducidadProductos\PrototipoSistemaCaducidadProductos\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

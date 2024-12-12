@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2LtUh4CWOHU=",
+  "dgSpecHash": "cMlNOT8fgQY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Edgar\\Downloads\\Temporaly\\Daniel_proyecto\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj",
+  "projectFilePath": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edgar\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.1\\system.configuration.configurationmanager.8.0.1.nupkg.sha512",
     "C:\\Users\\Edgar\\.nuget\\packages\\system.data.oledb\\8.0.1\\system.data.oledb.8.0.1.nupkg.sha512",
