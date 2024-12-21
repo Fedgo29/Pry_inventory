@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{053B6DC3-B109-4FD1-8FD5-BB008EF50B7D}|PrototipoSistemaCaducidadProductos.vbproj|c:\\users\\edgar\\documents\\github\\pry_inventory\\pry_inventory\\prototiposistemacaducidadproductos\\prototiposistemacaducidadproductos\\usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{053B6DC3-B109-4FD1-8FD5-BB008EF50B7D}|PrototipoSistemaCaducidadProductos.vbproj|solutionrelative:usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{053B6DC3-B109-4FD1-8FD5-BB008EF50B7D}|PrototipoSistemaCaducidadProductos.vbproj|c:\\users\\edgar\\documents\\github\\pry_inventory\\pry_inventory\\prototiposistemacaducidadproductos\\prototiposistemacaducidadproductos\\productos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{053B6DC3-B109-4FD1-8FD5-BB008EF50B7D}|PrototipoSistemaCaducidadProductos.vbproj|solutionrelative:productos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{053B6DC3-B109-4FD1-8FD5-BB008EF50B7D}|PrototipoSistemaCaducidadProductos.vbproj|c:\\users\\edgar\\documents\\github\\pry_inventory\\pry_inventory\\prototiposistemacaducidadproductos\\prototiposistemacaducidadproductos\\usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{053B6DC3-B109-4FD1-8FD5-BB008EF50B7D}|PrototipoSistemaCaducidadProductos.vbproj|solutionrelative:usuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{053B6DC3-B109-4FD1-8FD5-BB008EF50B7D}|PrototipoSistemaCaducidadProductos.vbproj|c:\\users\\edgar\\documents\\github\\pry_inventory\\pry_inventory\\prototiposistemacaducidadproductos\\prototiposistemacaducidadproductos\\productos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{053B6DC3-B109-4FD1-8FD5-BB008EF50B7D}|PrototipoSistemaCaducidadProductos.vbproj|solutionrelative:productos.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuario.vb",
-              "DocumentMoniker": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\Usuario.vb",
-              "RelativeDocumentMoniker": "Usuario.vb",
-              "ToolTip": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\Usuario.vb*",
-              "RelativeToolTip": "Usuario.vb*",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Title": "Productos.vb",
+              "DocumentMoniker": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\Productos.vb",
+              "RelativeDocumentMoniker": "Productos.vb",
+              "ToolTip": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\Productos.vb",
+              "RelativeToolTip": "Productos.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-17T04:03:51.092Z",
+              "WhenOpened": "2024-12-17T04:43:41.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuario.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\Usuario.vb",
-              "RelativeDocumentMoniker": "Usuario.vb",
-              "ToolTip": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\Usuario.vb [Dise\u00F1o]*",
-              "RelativeToolTip": "Usuario.vb [Dise\u00F1o]*",
+              "Title": "Productos.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\Productos.vb",
+              "RelativeDocumentMoniker": "Productos.vb",
+              "ToolTip": "C:\\Users\\Edgar\\Documents\\GitHub\\Pry_inventory\\pry_inventory\\PrototipoSistemaCaducidadProductos\\PrototipoSistemaCaducidadProductos\\Productos.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Productos.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-17T04:03:41.254Z",
+              "WhenOpened": "2024-12-17T04:43:36.265Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

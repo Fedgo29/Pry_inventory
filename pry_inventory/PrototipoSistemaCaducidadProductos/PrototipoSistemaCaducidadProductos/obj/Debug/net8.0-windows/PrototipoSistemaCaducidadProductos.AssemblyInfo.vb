@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("PrototipoSistemaCaducidadProductos"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25db35136161107ab892a0b2cc850f8392e4b392"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+697d961129dd30cb28f067a48a648dffa5c7af45"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("PrototipoSistemaCaducidadProductos"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("PrototipoSistemaCaducidadProductos"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
