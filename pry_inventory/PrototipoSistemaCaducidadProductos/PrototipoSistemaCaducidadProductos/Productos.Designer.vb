@@ -46,11 +46,7 @@ Partial Class Productos
         Label13 = New Label()
         tb_stockmin = New TextBox()
         Label12 = New Label()
-        tb_utilidad = New TextBox()
-        Label8 = New Label()
         Label9 = New Label()
-        tb_cantidad = New TextBox()
-        Label10 = New Label()
         tbPrecio_out = New TextBox()
         Label11 = New Label()
         tb_marca = New TextBox()
@@ -65,8 +61,6 @@ Partial Class Productos
         Label3 = New Label()
         tb_um = New TextBox()
         Label2 = New Label()
-        tb_material = New TextBox()
-        Label1 = New Label()
         tbDescripcion = New TextBox()
         LabelCodigodeBarra = New Label()
         PProducto.SuspendLayout()
@@ -211,11 +205,7 @@ Partial Class Productos
         GroupBoxProducto.Controls.Add(Label13)
         GroupBoxProducto.Controls.Add(tb_stockmin)
         GroupBoxProducto.Controls.Add(Label12)
-        GroupBoxProducto.Controls.Add(tb_utilidad)
-        GroupBoxProducto.Controls.Add(Label8)
         GroupBoxProducto.Controls.Add(Label9)
-        GroupBoxProducto.Controls.Add(tb_cantidad)
-        GroupBoxProducto.Controls.Add(Label10)
         GroupBoxProducto.Controls.Add(tbPrecio_out)
         GroupBoxProducto.Controls.Add(Label11)
         GroupBoxProducto.Controls.Add(tb_marca)
@@ -230,15 +220,13 @@ Partial Class Productos
         GroupBoxProducto.Controls.Add(Label3)
         GroupBoxProducto.Controls.Add(tb_um)
         GroupBoxProducto.Controls.Add(Label2)
-        GroupBoxProducto.Controls.Add(tb_material)
-        GroupBoxProducto.Controls.Add(Label1)
         GroupBoxProducto.Controls.Add(tbDescripcion)
         GroupBoxProducto.Controls.Add(LabelCodigodeBarra)
         GroupBoxProducto.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GroupBoxProducto.ForeColor = Color.Black
         GroupBoxProducto.Location = New Point(43, 77)
         GroupBoxProducto.Name = "GroupBoxProducto"
-        GroupBoxProducto.Size = New Size(408, 679)
+        GroupBoxProducto.Size = New Size(408, 568)
         GroupBoxProducto.TabIndex = 28
         GroupBoxProducto.TabStop = False
         GroupBoxProducto.Text = "Producto"
@@ -247,7 +235,7 @@ Partial Class Productos
         ' 
         dtp_fechacaducidad.Font = New Font("Microsoft Sans Serif", 12F)
         dtp_fechacaducidad.Format = DateTimePickerFormat.Short
-        dtp_fechacaducidad.Location = New Point(187, 601)
+        dtp_fechacaducidad.Location = New Point(187, 493)
         dtp_fechacaducidad.Name = "dtp_fechacaducidad"
         dtp_fechacaducidad.Size = New Size(205, 30)
         dtp_fechacaducidad.TabIndex = 31
@@ -255,7 +243,7 @@ Partial Class Productos
         ' bEliminar
         ' 
         bEliminar.Font = New Font("Bahnschrift SemiCondensed", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        bEliminar.Location = New Point(6, 644)
+        bEliminar.Location = New Point(7, 529)
         bEliminar.Name = "bEliminar"
         bEliminar.Size = New Size(128, 29)
         bEliminar.TabIndex = 33
@@ -276,14 +264,14 @@ Partial Class Productos
         Label15.ForeColor = Color.Black
         Label15.Location = New Point(108, 68)
         Label15.Name = "Label15"
-        Label15.Size = New Size(73, 20)
+        Label15.Size = New Size(84, 20)
         Label15.TabIndex = 31
-        Label15.Text = "Nombre:"
+        Label15.Text = "* Nombre:"
         ' 
         ' bguardar
         ' 
         bguardar.Font = New Font("Bahnschrift SemiCondensed", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        bguardar.Location = New Point(274, 644)
+        bguardar.Location = New Point(275, 529)
         bguardar.Name = "bguardar"
         bguardar.Size = New Size(128, 29)
         bguardar.TabIndex = 30
@@ -293,7 +281,7 @@ Partial Class Productos
         ' blimpiar
         ' 
         blimpiar.Font = New Font("Bahnschrift SemiCondensed", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        blimpiar.Location = New Point(140, 644)
+        blimpiar.Location = New Point(141, 529)
         blimpiar.Name = "blimpiar"
         blimpiar.Size = New Size(128, 29)
         blimpiar.TabIndex = 26
@@ -302,7 +290,7 @@ Partial Class Productos
         ' 
         ' tb_stockmax
         ' 
-        tb_stockmax.Location = New Point(187, 421)
+        tb_stockmax.Location = New Point(187, 385)
         tb_stockmax.Name = "tb_stockmax"
         tb_stockmax.Size = New Size(205, 30)
         tb_stockmax.TabIndex = 29
@@ -312,15 +300,15 @@ Partial Class Productos
         Label14.AutoSize = True
         Label14.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label14.ForeColor = Color.Black
-        Label14.Location = New Point(66, 428)
+        Label14.Location = New Point(66, 392)
         Label14.Name = "Label14"
-        Label14.Size = New Size(119, 20)
+        Label14.Size = New Size(130, 20)
         Label14.TabIndex = 28
-        Label14.Text = "Stock máximo:"
+        Label14.Text = "* Stock máximo:"
         ' 
         ' tb_stockact
         ' 
-        tb_stockact.Location = New Point(187, 385)
+        tb_stockact.Location = New Point(187, 349)
         tb_stockact.Name = "tb_stockact"
         tb_stockact.Size = New Size(205, 30)
         tb_stockact.TabIndex = 27
@@ -330,15 +318,15 @@ Partial Class Productos
         Label13.AutoSize = True
         Label13.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label13.ForeColor = Color.Black
-        Label13.Location = New Point(66, 392)
+        Label13.Location = New Point(66, 356)
         Label13.Name = "Label13"
-        Label13.Size = New Size(108, 20)
+        Label13.Size = New Size(119, 20)
         Label13.TabIndex = 26
-        Label13.Text = "Stock Actual:"
+        Label13.Text = "* Stock Actual:"
         ' 
         ' tb_stockmin
         ' 
-        tb_stockmin.Location = New Point(187, 349)
+        tb_stockmin.Location = New Point(187, 313)
         tb_stockmin.Name = "tb_stockmin"
         tb_stockmin.Size = New Size(205, 30)
         tb_stockmin.TabIndex = 25
@@ -348,62 +336,26 @@ Partial Class Productos
         Label12.AutoSize = True
         Label12.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label12.ForeColor = Color.Black
-        Label12.Location = New Point(66, 356)
+        Label12.Location = New Point(66, 320)
         Label12.Name = "Label12"
-        Label12.Size = New Size(115, 20)
+        Label12.Size = New Size(126, 20)
         Label12.TabIndex = 24
-        Label12.Text = "Stock minimo:"
-        ' 
-        ' tb_utilidad
-        ' 
-        tb_utilidad.Location = New Point(187, 529)
-        tb_utilidad.Name = "tb_utilidad"
-        tb_utilidad.Size = New Size(205, 30)
-        tb_utilidad.TabIndex = 23
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.ForeColor = Color.Black
-        Label8.Location = New Point(111, 536)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(70, 20)
-        Label8.TabIndex = 22
-        Label8.Text = "Utilidad:"
+        Label12.Text = "* Stock minimo:"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.Black
-        Label9.Location = New Point(14, 608)
+        Label9.Location = New Point(14, 500)
         Label9.Name = "Label9"
-        Label9.Size = New Size(167, 20)
+        Label9.Size = New Size(178, 20)
         Label9.TabIndex = 20
-        Label9.Text = "Fecha de Caducidad:"
-        ' 
-        ' tb_cantidad
-        ' 
-        tb_cantidad.Location = New Point(187, 565)
-        tb_cantidad.Name = "tb_cantidad"
-        tb_cantidad.Size = New Size(205, 30)
-        tb_cantidad.TabIndex = 19
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label10.ForeColor = Color.Black
-        Label10.Location = New Point(24, 572)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(157, 20)
-        Label10.TabIndex = 18
-        Label10.Text = "Cantidad Inventario:"
+        Label9.Text = "* Fecha de Caducidad:"
         ' 
         ' tbPrecio_out
         ' 
-        tbPrecio_out.Location = New Point(187, 493)
+        tbPrecio_out.Location = New Point(187, 457)
         tbPrecio_out.Name = "tbPrecio_out"
         tbPrecio_out.Size = New Size(205, 30)
         tbPrecio_out.TabIndex = 17
@@ -413,7 +365,7 @@ Partial Class Productos
         Label11.AutoSize = True
         Label11.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label11.ForeColor = Color.Black
-        Label11.Location = New Point(48, 500)
+        Label11.Location = New Point(48, 464)
         Label11.Name = "Label11"
         Label11.Size = New Size(133, 20)
         Label11.TabIndex = 16
@@ -421,7 +373,7 @@ Partial Class Productos
         ' 
         ' tb_marca
         ' 
-        tb_marca.Location = New Point(187, 277)
+        tb_marca.Location = New Point(187, 241)
         tb_marca.Name = "tb_marca"
         tb_marca.Size = New Size(205, 30)
         tb_marca.TabIndex = 15
@@ -431,7 +383,7 @@ Partial Class Productos
         Label4.AutoSize = True
         Label4.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.Black
-        Label4.Location = New Point(120, 284)
+        Label4.Location = New Point(120, 248)
         Label4.Name = "Label4"
         Label4.Size = New Size(61, 20)
         Label4.TabIndex = 14
@@ -439,7 +391,7 @@ Partial Class Productos
         ' 
         ' tb_precioin
         ' 
-        tb_precioin.Location = New Point(187, 457)
+        tb_precioin.Location = New Point(187, 421)
         tb_precioin.Name = "tb_precioin"
         tb_precioin.Size = New Size(205, 30)
         tb_precioin.TabIndex = 13
@@ -449,7 +401,7 @@ Partial Class Productos
         Label5.AutoSize = True
         Label5.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.Black
-        Label5.Location = New Point(32, 464)
+        Label5.Location = New Point(32, 428)
         Label5.Name = "Label5"
         Label5.Size = New Size(149, 20)
         Label5.TabIndex = 12
@@ -457,7 +409,7 @@ Partial Class Productos
         ' 
         ' tb_proveedor
         ' 
-        tb_proveedor.Location = New Point(187, 313)
+        tb_proveedor.Location = New Point(187, 277)
         tb_proveedor.Name = "tb_proveedor"
         tb_proveedor.Size = New Size(205, 30)
         tb_proveedor.TabIndex = 11
@@ -467,15 +419,15 @@ Partial Class Productos
         Label6.AutoSize = True
         Label6.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.Black
-        Label6.Location = New Point(91, 320)
+        Label6.Location = New Point(91, 284)
         Label6.Name = "Label6"
-        Label6.Size = New Size(90, 20)
+        Label6.Size = New Size(101, 20)
         Label6.TabIndex = 10
-        Label6.Text = "Proveedor:"
+        Label6.Text = "* Proveedor:"
         ' 
         ' tb_categoria
         ' 
-        tb_categoria.Location = New Point(187, 241)
+        tb_categoria.Location = New Point(187, 205)
         tb_categoria.Name = "tb_categoria"
         tb_categoria.Size = New Size(205, 30)
         tb_categoria.TabIndex = 9
@@ -485,11 +437,11 @@ Partial Class Productos
         Label7.AutoSize = True
         Label7.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.Black
-        Label7.Location = New Point(95, 248)
+        Label7.Location = New Point(84, 212)
         Label7.Name = "Label7"
-        Label7.Size = New Size(86, 20)
+        Label7.Size = New Size(97, 20)
         Label7.TabIndex = 8
-        Label7.Text = "Categoría:"
+        Label7.Text = "* Categoría:"
         ' 
         ' tbCodigodebarras
         ' 
@@ -505,13 +457,13 @@ Partial Class Productos
         Label3.ForeColor = Color.Black
         Label3.Location = New Point(45, 140)
         Label3.Name = "Label3"
-        Label3.Size = New Size(136, 20)
+        Label3.Size = New Size(147, 20)
         Label3.TabIndex = 6
-        Label3.Text = "Código de Barra:"
+        Label3.Text = "* Código de Barra:"
         ' 
         ' tb_um
         ' 
-        tb_um.Location = New Point(187, 205)
+        tb_um.Location = New Point(187, 169)
         tb_um.Name = "tb_um"
         tb_um.Size = New Size(205, 30)
         tb_um.TabIndex = 5
@@ -521,29 +473,11 @@ Partial Class Productos
         Label2.AutoSize = True
         Label2.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(141, 212)
+        Label2.Location = New Point(141, 176)
         Label2.Name = "Label2"
         Label2.Size = New Size(40, 20)
         Label2.TabIndex = 4
         Label2.Text = "UM:"
-        ' 
-        ' tb_material
-        ' 
-        tb_material.Location = New Point(187, 169)
-        tb_material.Name = "tb_material"
-        tb_material.Size = New Size(205, 30)
-        tb_material.TabIndex = 3
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.Black
-        Label1.Location = New Point(107, 176)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(74, 20)
-        Label1.TabIndex = 2
-        Label1.Text = "Material:"
         ' 
         ' tbDescripcion
         ' 
@@ -559,9 +493,9 @@ Partial Class Productos
         LabelCodigodeBarra.ForeColor = Color.Black
         LabelCodigodeBarra.Location = New Point(77, 104)
         LabelCodigodeBarra.Name = "LabelCodigodeBarra"
-        LabelCodigodeBarra.Size = New Size(104, 20)
+        LabelCodigodeBarra.Size = New Size(115, 20)
         LabelCodigodeBarra.TabIndex = 0
-        LabelCodigodeBarra.Text = "Descripción:"
+        LabelCodigodeBarra.Text = "* Descripción:"
         ' 
         ' Productos
         ' 
@@ -609,8 +543,6 @@ Partial Class Productos
     Friend WithEvents tb_utilidad As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents tb_cantidad As TextBox
-    Friend WithEvents Label10 As Label
     Friend WithEvents tbPrecio_out As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents tb_marca As TextBox

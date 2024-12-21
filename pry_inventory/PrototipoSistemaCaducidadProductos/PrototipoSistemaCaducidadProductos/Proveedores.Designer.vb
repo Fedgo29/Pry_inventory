@@ -218,9 +218,9 @@ Partial Class Proveedores
         Label15.ForeColor = Color.Black
         Label15.Location = New Point(6, 68)
         Label15.Name = "Label15"
-        Label15.Size = New Size(179, 20)
+        Label15.Size = New Size(190, 20)
         Label15.TabIndex = 31
-        Label15.Text = "Nombre del proveedor:"
+        Label15.Text = "* Nombre del proveedor:"
         ' 
         ' bguardar
         ' 
@@ -256,9 +256,9 @@ Partial Class Proveedores
         Label3.ForeColor = Color.Black
         Label3.Location = New Point(12, 140)
         Label3.Name = "Label3"
-        Label3.Size = New Size(169, 20)
+        Label3.Size = New Size(180, 20)
         Label3.TabIndex = 6
-        Label3.Text = "Nombre del contacto:"
+        Label3.Text = "* Nombre del contacto:"
         ' 
         ' tbCargoContacto
         ' 
@@ -274,9 +274,9 @@ Partial Class Proveedores
         Label1.ForeColor = Color.Black
         Label1.Location = New Point(26, 176)
         Label1.Name = "Label1"
-        Label1.Size = New Size(155, 20)
+        Label1.Size = New Size(166, 20)
         Label1.TabIndex = 2
-        Label1.Text = "Cargo del contacto:"
+        Label1.Text = "* Cargo del contacto:"
         ' 
         ' tbDireccion
         ' 
@@ -292,9 +292,9 @@ Partial Class Proveedores
         LabelCodigodeBarra.ForeColor = Color.Black
         LabelCodigodeBarra.Location = New Point(77, 104)
         LabelCodigodeBarra.Name = "LabelCodigodeBarra"
-        LabelCodigodeBarra.Size = New Size(81, 20)
+        LabelCodigodeBarra.Size = New Size(92, 20)
         LabelCodigodeBarra.TabIndex = 0
-        LabelCodigodeBarra.Text = "Dirección"
+        LabelCodigodeBarra.Text = "* Dirección"
         ' 
         ' Proveedores
         ' 

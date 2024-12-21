@@ -263,9 +263,9 @@ Partial Class Usuario
         Label4.ForeColor = Color.Black
         Label4.Location = New Point(24, 272)
         Label4.Name = "Label4"
-        Label4.Size = New Size(156, 20)
+        Label4.Size = New Size(167, 20)
         Label4.TabIndex = 38
-        Label4.Text = "Repetir contraseña:"
+        Label4.Text = "* Repetir contraseña:"
         ' 
         ' tb_contraseniauna
         ' 
@@ -281,9 +281,9 @@ Partial Class Usuario
         Label2.ForeColor = Color.Black
         Label2.Location = New Point(80, 239)
         Label2.Name = "Label2"
-        Label2.Size = New Size(100, 20)
+        Label2.Size = New Size(111, 20)
         Label2.TabIndex = 36
-        Label2.Text = "Contraseña:"
+        Label2.Text = "* Contraseña:"
         ' 
         ' tb_correoelectronico
         ' 
@@ -299,9 +299,9 @@ Partial Class Usuario
         Label1.ForeColor = Color.Black
         Label1.Location = New Point(19, 200)
         Label1.Name = "Label1"
-        Label1.Size = New Size(157, 20)
+        Label1.Size = New Size(168, 20)
         Label1.TabIndex = 34
-        Label1.Text = "Correo electrónico: "
+        Label1.Text = "* Correo electrónico: "
         ' 
         ' bEliminar
         ' 
@@ -327,9 +327,9 @@ Partial Class Usuario
         Label15.ForeColor = Color.Black
         Label15.Location = New Point(107, 92)
         Label15.Name = "Label15"
-        Label15.Size = New Size(73, 20)
+        Label15.Size = New Size(84, 20)
         Label15.TabIndex = 31
-        Label15.Text = "Nombre:"
+        Label15.Text = "* Nombre:"
         ' 
         ' bguardar
         ' 
@@ -365,9 +365,9 @@ Partial Class Usuario
         Label3.ForeColor = Color.Black
         Label3.Location = New Point(19, 164)
         Label3.Name = "Label3"
-        Label3.Size = New Size(161, 20)
+        Label3.Size = New Size(172, 20)
         Label3.TabIndex = 6
-        Label3.Text = "Nombre de usuario: "
+        Label3.Text = "* Nombre de usuario: "
         ' 
         ' tb_apellido
         ' 
@@ -383,9 +383,9 @@ Partial Class Usuario
         LabelCodigodeBarra.ForeColor = Color.Black
         LabelCodigodeBarra.Location = New Point(107, 128)
         LabelCodigodeBarra.Name = "LabelCodigodeBarra"
-        LabelCodigodeBarra.Size = New Size(73, 20)
+        LabelCodigodeBarra.Size = New Size(84, 20)
         LabelCodigodeBarra.TabIndex = 0
-        LabelCodigodeBarra.Text = "Apellido:"
+        LabelCodigodeBarra.Text = "* Apellido:"
         ' 
         ' Usuario
         ' 

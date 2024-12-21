@@ -223,9 +223,9 @@ Partial Class Categoria
         Label15.ForeColor = Color.Black
         Label15.Location = New Point(107, 92)
         Label15.Name = "Label15"
-        Label15.Size = New Size(73, 20)
+        Label15.Size = New Size(84, 20)
         Label15.TabIndex = 31
-        Label15.Text = "Nombre:"
+        Label15.Text = "* Nombre:"
         ' 
         ' bguardar
         ' 
@@ -272,9 +272,9 @@ Partial Class Categoria
         LabelCodigodeBarra.ForeColor = Color.Black
         LabelCodigodeBarra.Location = New Point(76, 128)
         LabelCodigodeBarra.Name = "LabelCodigodeBarra"
-        LabelCodigodeBarra.Size = New Size(104, 20)
+        LabelCodigodeBarra.Size = New Size(115, 20)
         LabelCodigodeBarra.TabIndex = 0
-        LabelCodigodeBarra.Text = "Descripción:"
+        LabelCodigodeBarra.Text = "* Descripción:"
         ' 
         ' Categoria
         ' 

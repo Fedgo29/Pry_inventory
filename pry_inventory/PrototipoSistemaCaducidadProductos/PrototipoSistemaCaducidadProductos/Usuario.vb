@@ -10,7 +10,7 @@ Public Class Usuario
         Dim connection As New OleDbConnection(connectionString)
 
         Try
-            Dim query As String = "UPDATE USUARIO Nombre= @newNombre, Apellido=@newApellido, Nombre_de_usuario=@newNombreUsuario, Correo_electronico=@newCorreo, Contrasenia=@newContrasenia, Activo=@newActivo, Admin=@newAdmin, Fecha_Creacion=@newFechaCreacion WHERE ID=@ID;"
+            Dim query As String = "UPDATE USUARIO SET Nombre=@newNombre, Apellido=@newApellido, Nombre_de_usuario=@newNombreUsuario, Correo_electronico=@newCorreo, Contrasenia=@newContrasenia, Activo=@newActivo, Admin=@newAdmin, Fecha_Creacion=@newFechaCreacion WHERE ID=@ID;"
 
             Dim cmd = New OleDbCommand(query, connection)
 
@@ -36,8 +36,8 @@ Public Class Usuario
             MessageBox.Show("Un error ocurrió: " & ex.Message)
         Finally
             If connection IsNot Nothing AndAlso connection.State = ConnectionState.Open Then
-                connection.Close()
-            End If
+            connection.Close()
+        End If
         End Try
     End Sub
 
@@ -127,13 +127,21 @@ Public Class Usuario
 
     Private Sub bguardar_Click(sender As Object, e As EventArgs) Handles bguardar.Click
         If bguardar.Text = "Guardar" Then
-            guardar()
-            limpiar_controles()
-            cargarInfo()
+            If tb_contraseniauna.Text <> "" And tb_contraseniados.Text <> "" Then
+                If String.Equals(tb_contraseniauna.Text.Trim(), tb_contraseniados.Text.Trim(), StringComparison.OrdinalIgnoreCase) Then
+                    guardar()
+                    limpiar_controles()
+                    cargarInfo()
+                End If
+            End If
         Else
-            actualizar()
-            limpiar_controles()
-            cargarInfo()
+            If tb_contraseniauna.Text <> "" And tb_contraseniados.Text <> "" Then
+                If String.Equals(tb_contraseniauna.Text.Trim(), tb_contraseniados.Text.Trim(), StringComparison.OrdinalIgnoreCase) Then
+                    actualizar()
+                    limpiar_controles()
+                    cargarInfo()
+                End If
+            End If
         End If
     End Sub
 
